@@ -14,7 +14,7 @@ const colorList = [
 const colorButton = () => {
     let content = "";
     for (const index in colorList) {
-        content += `<button class="color-button ${colorList[index]}"   ></button>`;
+        content += `<button class="color-button ${colorList[index]}"></button>`;
     }
     document.getElementById("colorContainer").innerHTML = content;
 };
