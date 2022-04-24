@@ -21,17 +21,17 @@ const colorButton = () => {
 colorButton();
 
 const house = document.getElementById("house");
-const pickColors = document.getElementsByClassName("color-button");
-for (let index = 0; index < pickColors.length; index++) {
-    pickColors[index].addEventListener("click", () => {
+const chooseColors = document.getElementsByClassName("color-button");
+for (let index = 0; index < chooseColors.length; index++) {
+    chooseColors[index].addEventListener("click", () => {
         changeColor(colorList[index], index);
     });
 }
 
 const changeColor = (off, on) => {
-    for (let index = 0; index < pickColors.length; index++) {
-        pickColors[index].classList.remove("active");
-        pickColors[on].classList.add("active");
+    for (let index = 0; index < chooseColors.length; index++) {
+        chooseColors[index].classList.remove("active");
+        chooseColors[on].classList.add("active");
     }
     house.className = "house " + off;
 };
